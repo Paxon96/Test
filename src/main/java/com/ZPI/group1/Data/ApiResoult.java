@@ -12,15 +12,23 @@ public class ApiResoult {
 
     public ApiResoult(String data, Double cena) throws ParseException {
         this.temp = data;
+
+
         this.cena = cena;
+
+
         date = new SimpleDateFormat("yyyy-MM-dd").parse(data);
     }
 
     @Override
     public String toString() {
+
         return "ApiResoult{" +
+
                 "data=" + date +
+
                 ", cena=" + cena +
+
                 '}';
     }
 }
